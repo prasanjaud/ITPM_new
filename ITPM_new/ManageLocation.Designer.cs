@@ -81,6 +81,7 @@ namespace ITPM_new
             this.btnUpdate.TabIndex = 23;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnClear
             // 
@@ -94,6 +95,7 @@ namespace ITPM_new
             this.btnClear.TabIndex = 22;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // rdBtnLaboratory
             // 
@@ -105,6 +107,7 @@ namespace ITPM_new
             this.rdBtnLaboratory.TabIndex = 21;
             this.rdBtnLaboratory.Text = "Laboratory";
             this.rdBtnLaboratory.UseVisualStyleBackColor = true;
+            this.rdBtnLaboratory.CheckedChanged += new System.EventHandler(this.rdBtnLaboratory_CheckedChanged);
             // 
             // rdBtnLectureHall
             // 
@@ -116,6 +119,7 @@ namespace ITPM_new
             this.rdBtnLectureHall.TabIndex = 20;
             this.rdBtnLectureHall.Text = "Lecture Hall";
             this.rdBtnLectureHall.UseVisualStyleBackColor = true;
+            this.rdBtnLectureHall.CheckedChanged += new System.EventHandler(this.rdBtnLectureHall_CheckedChanged);
             // 
             // txtCapacity
             // 
@@ -188,6 +192,7 @@ namespace ITPM_new
             this.dataGridViewRoom.RowTemplate.Height = 25;
             this.dataGridViewRoom.Size = new System.Drawing.Size(757, 149);
             this.dataGridViewRoom.TabIndex = 24;
+            this.dataGridViewRoom.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewRoom_CellClick);
             // 
             // btnDelete
             // 
@@ -201,6 +206,7 @@ namespace ITPM_new
             this.btnDelete.TabIndex = 25;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // lblHeading
             // 
@@ -451,6 +457,7 @@ namespace ITPM_new
             this.Name = "ManageLocation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manage Location";
+            this.Load += new System.EventHandler(this.ManageLocation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRoom)).EndInit();
             this.grpBoxTab.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
