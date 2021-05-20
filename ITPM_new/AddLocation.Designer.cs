@@ -404,7 +404,7 @@ namespace ITPM_new
             this.workingDaysAndHoursToolStripMenuItem.Size = new System.Drawing.Size(150, 20);
             this.workingDaysAndHoursToolStripMenuItem.Text = "Working Days and Hours";
             // 
-            // Form1
+            // AddLocation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -429,9 +429,10 @@ namespace ITPM_new
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "AddLocation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Rooms";
+            this.Load += new System.EventHandler(this.AddLocation_Load);
             this.grpBoxTab.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

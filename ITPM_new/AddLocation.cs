@@ -63,5 +63,10 @@ namespace ITPM_new
         {
             roomType = "Lecture Hall";
         }
+
+        private void AddLocation_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
