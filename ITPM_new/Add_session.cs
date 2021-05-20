@@ -130,7 +130,7 @@ namespace ITPM_new
             {
                 
 
-                    query = "insert into session (lec1,lec2,subject_code,grp_id,tag,nstudents, duration,sub_name) values" + "('" + lec.Text.Trim() + "','" + lec2.Text.Trim() + "','" + sub.Text.Trim() + "','" + grp.Text.Trim() + "','" + tag.Text.Trim() + "','" + scount.Text.Trim() + "','" + time.Text.Trim() + "','" + subn.Text.Trim() + "')";
+                    query = "insert into session (lec1,lec2,subject_code,grp_id,tag,nstudents, duration,sub_name,overview) values" + "('" + lec.Text.Trim() + "','" + lec2.Text.Trim() + "','" + sub.Text.Trim() + "','" + grp.Text.Trim() + "','" + tag.Text.Trim() + "','" + scount.Text.Trim() + "','" + time.Text.Trim() + "','" + subn.Text.Trim() + "','"+view.Text.Trim()+"')";
                     con.setData(query);
 
             }

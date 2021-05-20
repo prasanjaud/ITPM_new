@@ -59,7 +59,6 @@ namespace ITPM_new
             this.button13 = new System.Windows.Forms.Button();
             this.lec2 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.button14 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.subn = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
@@ -291,9 +290,9 @@ namespace ITPM_new
             // view
             // 
             this.view.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.view.Location = new System.Drawing.Point(170, 435);
+            this.view.Location = new System.Drawing.Point(127, 435);
             this.view.Name = "view";
-            this.view.Size = new System.Drawing.Size(743, 24);
+            this.view.Size = new System.Drawing.Size(786, 24);
             this.view.TabIndex = 82;
             // 
             // button11
@@ -324,7 +323,7 @@ namespace ITPM_new
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label7.Location = new System.Drawing.Point(478, 398);
+            this.label7.Location = new System.Drawing.Point(454, 399);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(80, 20);
             this.label7.TabIndex = 85;
@@ -361,18 +360,6 @@ namespace ITPM_new
             this.label8.TabIndex = 87;
             this.label8.Text = "Select Lecture 2";
             // 
-            // button14
-            // 
-            this.button14.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(369, 497);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(101, 43);
-            this.button14.TabIndex = 89;
-            this.button14.Text = "Genarate Subject Name";
-            this.button14.UseVisualStyleBackColor = false;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -400,7 +387,6 @@ namespace ITPM_new
             this.ClientSize = new System.Drawing.Size(984, 584);
             this.Controls.Add(this.subn);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.button14);
             this.Controls.Add(this.lec2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button13);
@@ -472,7 +458,6 @@ namespace ITPM_new
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.ComboBox lec2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox subn;
     }
