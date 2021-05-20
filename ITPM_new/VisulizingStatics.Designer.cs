@@ -29,6 +29,10 @@ namespace ITPM_new
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.lblLectureCount = new System.Windows.Forms.Label();
             this.lblLecture = new System.Windows.Forms.Label();
             this.pnlLectures = new System.Windows.Forms.Panel();
@@ -48,7 +52,6 @@ namespace ITPM_new
             this.lblLatestGroup = new System.Windows.Forms.Label();
             this.txtLatestLecturer = new System.Windows.Forms.TextBox();
             this.lblLatestLecturer = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.lecturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.studentGroupsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,13 +63,14 @@ namespace ITPM_new
             this.staticsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sessionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.workingDaysAndHoursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.pnlLectures.SuspendLayout();
             this.pnlStudents.SuspendLayout();
             this.pnlRooms.SuspendLayout();
             this.pnlSubjects.SuspendLayout();
             this.grpBoxDetails.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblLectureCount
@@ -195,9 +199,9 @@ namespace ITPM_new
             this.grpBoxDetails.Controls.Add(this.txtLatestLecturer);
             this.grpBoxDetails.Controls.Add(this.lblLatestLecturer);
             this.grpBoxDetails.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.grpBoxDetails.Location = new System.Drawing.Point(421, 210);
+            this.grpBoxDetails.Location = new System.Drawing.Point(454, 210);
             this.grpBoxDetails.Name = "grpBoxDetails";
-            this.grpBoxDetails.Size = new System.Drawing.Size(337, 194);
+            this.grpBoxDetails.Size = new System.Drawing.Size(304, 194);
             this.grpBoxDetails.TabIndex = 10;
             this.grpBoxDetails.TabStop = false;
             this.grpBoxDetails.Text = "What\'s New?";
@@ -259,14 +263,6 @@ namespace ITPM_new
             this.lblLatestLecturer.TabIndex = 0;
             this.lblLatestLecturer.Text = "Latest Lecturer :";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(33, 174);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(297, 209);
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -320,14 +316,14 @@ namespace ITPM_new
             // addLocationsToolStripMenuItem
             // 
             this.addLocationsToolStripMenuItem.Name = "addLocationsToolStripMenuItem";
-            this.addLocationsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addLocationsToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.addLocationsToolStripMenuItem.Text = "Add Locations";
             this.addLocationsToolStripMenuItem.Click += new System.EventHandler(this.addLocationsToolStripMenuItem_Click);
             // 
             // manageLocationsToolStripMenuItem
             // 
             this.manageLocationsToolStripMenuItem.Name = "manageLocationsToolStripMenuItem";
-            this.manageLocationsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.manageLocationsToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.manageLocationsToolStripMenuItem.Text = "Manage Locations";
             this.manageLocationsToolStripMenuItem.Click += new System.EventHandler(this.manageLocationsToolStripMenuItem_Click);
             // 
@@ -349,14 +345,36 @@ namespace ITPM_new
             this.workingDaysAndHoursToolStripMenuItem.Size = new System.Drawing.Size(150, 20);
             this.workingDaysAndHoursToolStripMenuItem.Text = "Working Days and Hours";
             // 
+            // chart1
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(12, 175);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series1.Legend = "Legend1";
+            series1.Name = "Lecture Rooms";
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series2.Legend = "Legend1";
+            series2.Name = "Laboratories";
+            this.chart1.Series.Add(series1);
+            this.chart1.Series.Add(series2);
+            this.chart1.Size = new System.Drawing.Size(423, 263);
+            this.chart1.TabIndex = 32;
+            this.chart1.Text = "chart1";
+            // 
             // VisulizingStatics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(120)))), ((int)(((byte)(126)))));
             this.ClientSize = new System.Drawing.Size(785, 450);
+            this.Controls.Add(this.chart1);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.grpBoxDetails);
             this.Controls.Add(this.pnlRooms);
             this.Controls.Add(this.lblRoom);
@@ -372,6 +390,7 @@ namespace ITPM_new
             this.Name = "VisulizingStatics";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Visulizing Statics";
+            this.Load += new System.EventHandler(this.VisulizingStatics_Load);
             this.pnlLectures.ResumeLayout(false);
             this.pnlLectures.PerformLayout();
             this.pnlStudents.ResumeLayout(false);
@@ -382,9 +401,9 @@ namespace ITPM_new
             this.pnlSubjects.PerformLayout();
             this.grpBoxDetails.ResumeLayout(false);
             this.grpBoxDetails.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -410,7 +429,6 @@ namespace ITPM_new
         private System.Windows.Forms.Label lblLatestGroup;
         private System.Windows.Forms.TextBox txtLatestLecturer;
         private System.Windows.Forms.Label lblLatestLecturer;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem lecturesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem studentGroupsToolStripMenuItem;
@@ -422,5 +440,6 @@ namespace ITPM_new
         private System.Windows.Forms.ToolStripMenuItem staticsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sessionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem workingDaysAndHoursToolStripMenuItem;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }
