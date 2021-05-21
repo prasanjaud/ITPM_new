@@ -57,6 +57,7 @@ namespace ITPM_new
             this.btnSession = new System.Windows.Forms.Button();
             this.btnTag = new System.Windows.Forms.Button();
             this.btnLecture = new System.Windows.Forms.Button();
+            this.lblHeading = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.grpBoxTab.SuspendLayout();
             this.SuspendLayout();
@@ -65,7 +66,7 @@ namespace ITPM_new
             // 
             this.lblSelectSession.AutoSize = true;
             this.lblSelectSession.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.lblSelectSession.Location = new System.Drawing.Point(38, 136);
+            this.lblSelectSession.Location = new System.Drawing.Point(38, 148);
             this.lblSelectSession.Name = "lblSelectSession";
             this.lblSelectSession.Size = new System.Drawing.Size(144, 24);
             this.lblSelectSession.TabIndex = 16;
@@ -74,24 +75,26 @@ namespace ITPM_new
             // cmbBoxSession
             // 
             this.cmbBoxSession.FormattingEnabled = true;
-            this.cmbBoxSession.Location = new System.Drawing.Point(195, 140);
+            this.cmbBoxSession.Location = new System.Drawing.Point(195, 152);
             this.cmbBoxSession.Name = "cmbBoxSession";
             this.cmbBoxSession.Size = new System.Drawing.Size(126, 21);
             this.cmbBoxSession.TabIndex = 17;
+            this.cmbBoxSession.SelectedIndexChanged += new System.EventHandler(this.cmbBoxSession_SelectedIndexChanged);
             // 
             // cmbBoxRoom
             // 
             this.cmbBoxRoom.FormattingEnabled = true;
-            this.cmbBoxRoom.Location = new System.Drawing.Point(533, 140);
+            this.cmbBoxRoom.Location = new System.Drawing.Point(594, 153);
             this.cmbBoxRoom.Name = "cmbBoxRoom";
             this.cmbBoxRoom.Size = new System.Drawing.Size(126, 21);
             this.cmbBoxRoom.TabIndex = 19;
+            this.cmbBoxRoom.SelectedIndexChanged += new System.EventHandler(this.cmbBoxRoom_SelectedIndexChanged);
             // 
             // lblSelectRoom
             // 
             this.lblSelectRoom.AutoSize = true;
             this.lblSelectRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.lblSelectRoom.Location = new System.Drawing.Point(357, 136);
+            this.lblSelectRoom.Location = new System.Drawing.Point(416, 148);
             this.lblSelectRoom.Name = "lblSelectRoom";
             this.lblSelectRoom.Size = new System.Drawing.Size(128, 24);
             this.lblSelectRoom.TabIndex = 18;
@@ -101,20 +104,24 @@ namespace ITPM_new
             // 
             this.lblSelectedSession.AutoSize = true;
             this.lblSelectedSession.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.lblSelectedSession.Location = new System.Drawing.Point(38, 221);
+            this.lblSelectedSession.Location = new System.Drawing.Point(297, 196);
             this.lblSelectedSession.Name = "lblSelectedSession";
-            this.lblSelectedSession.Size = new System.Drawing.Size(166, 24);
+            this.lblSelectedSession.Size = new System.Drawing.Size(156, 24);
             this.lblSelectedSession.TabIndex = 20;
-            this.lblSelectedSession.Text = "Selected Session :";
+            this.lblSelectedSession.Text = "Selected Session";
             // 
             // txtBoxSelectedSession
             // 
-            this.txtBoxSelectedSession.Font = new System.Drawing.Font("Segoe UI", 72F);
-            this.txtBoxSelectedSession.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txtBoxSelectedSession.Location = new System.Drawing.Point(227, 221);
+            this.txtBoxSelectedSession.Cursor = System.Windows.Forms.Cursors.No;
+            this.txtBoxSelectedSession.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxSelectedSession.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtBoxSelectedSession.Location = new System.Drawing.Point(42, 233);
+            this.txtBoxSelectedSession.Multiline = true;
             this.txtBoxSelectedSession.Name = "txtBoxSelectedSession";
-            this.txtBoxSelectedSession.Size = new System.Drawing.Size(280, 135);
-            this.txtBoxSelectedSession.TabIndex = 21;
+            this.txtBoxSelectedSession.ReadOnly = true;
+            this.txtBoxSelectedSession.Size = new System.Drawing.Size(678, 77);
+            this.txtBoxSelectedSession.TabIndex = 25;
+            this.txtBoxSelectedSession.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnSave
             // 
@@ -123,12 +130,13 @@ namespace ITPM_new
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnSave.ForeColor = System.Drawing.SystemColors.Menu;
-            this.btnSave.Location = new System.Drawing.Point(227, 400);
+            this.btnSave.Location = new System.Drawing.Point(256, 338);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(77, 26);
             this.btnSave.TabIndex = 23;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnClear
             // 
@@ -137,7 +145,7 @@ namespace ITPM_new
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnClear.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnClear.Location = new System.Drawing.Point(430, 400);
+            this.btnClear.Location = new System.Drawing.Point(450, 338);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(77, 26);
             this.btnClear.TabIndex = 22;
@@ -341,12 +349,24 @@ namespace ITPM_new
             this.btnLecture.Text = "Lectures";
             this.btnLecture.UseVisualStyleBackColor = false;
             // 
+            // lblHeading
+            // 
+            this.lblHeading.AutoSize = true;
+            this.lblHeading.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.lblHeading.ForeColor = System.Drawing.Color.Yellow;
+            this.lblHeading.Location = new System.Drawing.Point(268, 95);
+            this.lblHeading.Name = "lblHeading";
+            this.lblHeading.Size = new System.Drawing.Size(276, 29);
+            this.lblHeading.TabIndex = 34;
+            this.lblHeading.Text = "Manage Session Rooms";
+            // 
             // manageSessionRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(120)))), ((int)(((byte)(126)))));
-            this.ClientSize = new System.Drawing.Size(785, 450);
+            this.ClientSize = new System.Drawing.Size(785, 388);
+            this.Controls.Add(this.lblHeading);
             this.Controls.Add(this.grpBoxTab);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.btnSave);
@@ -400,5 +420,6 @@ namespace ITPM_new
         private System.Windows.Forms.Button btnSession;
         private System.Windows.Forms.Button btnTag;
         private System.Windows.Forms.Button btnLecture;
+        private System.Windows.Forms.Label lblHeading;
     }
 }

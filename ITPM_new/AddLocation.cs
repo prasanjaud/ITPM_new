@@ -49,9 +49,16 @@ namespace ITPM_new
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            query = "insert into rooms (buildingName, roomName, roomType, capacity) values ('" + txtBuildingName.Text + "','" + txtRoomName.Text + "','" + roomType + "'," + txtCapacity.Text + ")";
-            con.setData(query);
-            ClearAll();
+            if (string.IsNullOrEmpty(txtBuildingName.Text) || string.IsNullOrEmpty(txtRoomName.Text) || string.IsNullOrEmpty(txtCapacity.Text))
+            {
+                MessageBox.Show("Fill all textboxes.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                query = "insert into rooms (buildingName, roomName, roomType, capacity) values ('" + txtBuildingName.Text + "','" + txtRoomName.Text + "','" + roomType + "'," + txtCapacity.Text + ")";
+                con.setData(query);
+                ClearAll();
+            }
         }
 
         private void rdBtnLaboratory_CheckedChanged(object sender, EventArgs e)

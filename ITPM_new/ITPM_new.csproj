@@ -90,11 +90,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addConsecutive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addConsecutive.Designer.cs">
+      <DependentUpon>addConsecutive.cs</DependentUpon>
+    </Compile>
     <Compile Include="addLocationSession.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="addLocationSession.Designer.cs">
       <DependentUpon>addLocationSession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Lec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Lec.designer.cs">
+      <DependentUpon>Add_Lec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_session.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_session.designer.cs">
+      <DependentUpon>Add_session.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ads_sub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ads_sub.designer.cs">
+      <DependentUpon>Ads_sub.cs</DependentUpon>
     </Compile>
     <Compile Include="dbConnection.cs" />
     <Compile Include="AddLocation.cs">
@@ -121,6 +145,24 @@
     <Compile Include="manageSessionRoom.Designer.cs">
       <DependentUpon>manageSessionRoom.cs</DependentUpon>
     </Compile>
+    <Compile Include="mng_lec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mng_lec.designer.cs">
+      <DependentUpon>mng_lec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mng_session.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mng_session.designer.cs">
+      <DependentUpon>mng_session.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mng_sub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mng_sub.designer.cs">
+      <DependentUpon>mng_sub.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VisulizingStatics.cs">
@@ -129,11 +171,23 @@
     <Compile Include="VisulizingStatics.Designer.cs">
       <DependentUpon>VisulizingStatics.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="addConsecutive.resx">
+      <DependentUpon>addConsecutive.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddLocation.resx">
       <DependentUpon>AddLocation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="addLocationSession.resx">
       <DependentUpon>addLocationSession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Lec.resx">
+      <DependentUpon>Add_Lec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_session.resx">
+      <DependentUpon>Add_session.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ads_sub.resx">
+      <DependentUpon>Ads_sub.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
@@ -143,6 +197,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="manageSessionRoom.resx">
       <DependentUpon>manageSessionRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mng_lec.resx">
+      <DependentUpon>mng_lec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mng_session.resx">
+      <DependentUpon>mng_session.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mng_sub.resx">
+      <DependentUpon>mng_sub.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

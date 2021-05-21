@@ -29,10 +29,10 @@ namespace ITPM_new
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.lblLectureCount = new System.Windows.Forms.Label();
             this.lblLecture = new System.Windows.Forms.Label();
             this.pnlLectures = new System.Windows.Forms.Panel();
@@ -64,6 +64,7 @@ namespace ITPM_new
             this.sessionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.workingDaysAndHoursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.manageSessionRoomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlLectures.SuspendLayout();
             this.pnlStudents.SuspendLayout();
             this.pnlRooms.SuspendLayout();
@@ -285,6 +286,7 @@ namespace ITPM_new
             this.lecturesToolStripMenuItem.Name = "lecturesToolStripMenuItem";
             this.lecturesToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
             this.lecturesToolStripMenuItem.Text = "Lectures";
+            this.lecturesToolStripMenuItem.Click += new System.EventHandler(this.lecturesToolStripMenuItem_Click);
             // 
             // studentGroupsToolStripMenuItem
             // 
@@ -308,7 +310,8 @@ namespace ITPM_new
             // 
             this.locationsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addLocationsToolStripMenuItem,
-            this.manageLocationsToolStripMenuItem});
+            this.manageLocationsToolStripMenuItem,
+            this.manageSessionRoomToolStripMenuItem});
             this.locationsToolStripMenuItem.Name = "locationsToolStripMenuItem";
             this.locationsToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
             this.locationsToolStripMenuItem.Text = "Locations";
@@ -338,6 +341,7 @@ namespace ITPM_new
             this.sessionsToolStripMenuItem.Name = "sessionsToolStripMenuItem";
             this.sessionsToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
             this.sessionsToolStripMenuItem.Text = "Sessions";
+            this.sessionsToolStripMenuItem.Click += new System.EventHandler(this.sessionsToolStripMenuItem_Click);
             // 
             // workingDaysAndHoursToolStripMenuItem
             // 
@@ -347,25 +351,32 @@ namespace ITPM_new
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
             this.chart1.Location = new System.Drawing.Point(12, 175);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series1.Legend = "Legend1";
-            series1.Name = "Lecture Rooms";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series2.Legend = "Legend1";
-            series2.Name = "Laboratories";
-            this.chart1.Series.Add(series1);
-            this.chart1.Series.Add(series2);
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series5.Legend = "Legend1";
+            series5.Name = "Lecture Rooms";
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series6.Legend = "Legend1";
+            series6.Name = "Laboratories";
+            this.chart1.Series.Add(series5);
+            this.chart1.Series.Add(series6);
             this.chart1.Size = new System.Drawing.Size(423, 263);
             this.chart1.TabIndex = 32;
             this.chart1.Text = "chart1";
+            // 
+            // manageSessionRoomToolStripMenuItem
+            // 
+            this.manageSessionRoomToolStripMenuItem.Name = "manageSessionRoomToolStripMenuItem";
+            this.manageSessionRoomToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.manageSessionRoomToolStripMenuItem.Text = "Manage Session Room";
+            this.manageSessionRoomToolStripMenuItem.Click += new System.EventHandler(this.manageSessionRoomToolStripMenuItem_Click);
             // 
             // VisulizingStatics
             // 
@@ -441,5 +452,6 @@ namespace ITPM_new
         private System.Windows.Forms.ToolStripMenuItem sessionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem workingDaysAndHoursToolStripMenuItem;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.ToolStripMenuItem manageSessionRoomToolStripMenuItem;
     }
 }

@@ -81,5 +81,26 @@ namespace ITPM_new
             chart1.Series["Laboratories"].YValueMembers = "capacity";
             chart1.DataSource = ds8.Tables[0];
         }
+
+        private void lecturesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Add_Lec addLec = new Add_Lec();
+            addLec.Show();
+        }
+
+        private void manageSessionRoomToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            manageSessionRoom msform = new manageSessionRoom();
+            msform.Show();
+        }
+
+        private void sessionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            addLocationSession addLSForm = new addLocationSession();
+            addLSForm.Show();
+        }
     }
 }
