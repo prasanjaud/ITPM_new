@@ -40,8 +40,15 @@ namespace ITPM_new
             LoadData5();
             LoadData6();
 
+            
+            
+
+
+            
+
 
         }
+
        
        
         public void LoadData1()
@@ -55,7 +62,7 @@ namespace ITPM_new
         }
         public void LoadData2()
         {
-            query = "SELECT tag_name FROM idtag_table";
+            query = "SELECT tag_name FROM tag_table";
             DataSet ds = con.getData(query);
             for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
                 tag.Items.Add(ds.Tables[0].Rows[i][0].ToString());
@@ -112,6 +119,12 @@ namespace ITPM_new
 
             String overview ="   " + Lname + "   --   "+  lect2  + "   --   " + group + "   --   " + subject + "   --   "+  sub_name + "   --" + tag1 + "   --   " + count + "   --   " + dtime + "Hrs   ";
             view.Text = overview;
+
+           
+
+                button12.Enabled = true;
+                button14.Enabled = true;
+           
         }
 
         private bool IsValid()
@@ -140,6 +153,81 @@ namespace ITPM_new
         {
             //String sub;
             //query = "Select Subject_Name  From subjectinfo WHERE "
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Add_Lec form2 = new Add_Lec();
+            form2.Tag = this;
+            form2.Show(this);
+            Hide();
+        }
+
+        private void button14_Click_1(object sender, EventArgs e)
+        {
+            mng_session form2 = new mng_session();
+            form2.Tag = this;
+            form2.Show(this);
+            Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Add_sub form2 = new Add_sub();
+            form2.Tag = this;
+            form2.Show(this);
+            Hide();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Add_session form2 = new Add_session();
+            form2.Tag = this;
+            form2.Show(this);
+            Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            _3mem1 mform = new _3mem1();
+            mform.Show();
+            this.Hide();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Consecutive_Session mform = new Consecutive_Session();
+            mform.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form1 mform = new Form1();
+            mform.Show();
+            this.Hide();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Add_Tag mform = new Add_Tag();
+            mform.Show();
+            this.Hide();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            VisulizingStatics form2 = new VisulizingStatics();
+            form2.Tag = this;
+            form2.Show(this);
+            Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            AddLocation mform = new AddLocation();
+            mform.Show();
+            this.Hide();
         }
     }
 }

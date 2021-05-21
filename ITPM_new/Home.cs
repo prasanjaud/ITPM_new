@@ -30,5 +30,10 @@ namespace ITPM_new
             ManageLocation form2 = new ManageLocation();
             form2.Show();
         }
+
+        private void staticsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

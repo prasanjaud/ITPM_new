@@ -86,6 +86,7 @@ namespace ITPM_new
             this.button16.TabIndex = 54;
             this.button16.Text = "Statics";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // button17
             // 
@@ -96,6 +97,7 @@ namespace ITPM_new
             this.button17.TabIndex = 53;
             this.button17.Text = "Advances and Sessions";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // button18
             // 
@@ -117,6 +119,7 @@ namespace ITPM_new
             this.button19.TabIndex = 51;
             this.button19.Text = "Tags";
             this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
             // button20
             // 
@@ -127,6 +130,7 @@ namespace ITPM_new
             this.button20.TabIndex = 50;
             this.button20.Text = "Locations";
             this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // button21
             // 
@@ -137,6 +141,7 @@ namespace ITPM_new
             this.button21.TabIndex = 49;
             this.button21.Text = "Working days and hours";
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // button22
             // 
@@ -158,6 +163,7 @@ namespace ITPM_new
             this.button23.TabIndex = 47;
             this.button23.Text = "Students";
             this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
             // 
             // button24
             // 
@@ -168,6 +174,7 @@ namespace ITPM_new
             this.button24.TabIndex = 46;
             this.button24.Text = "Lecturer";
             this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
             // scode
             // 

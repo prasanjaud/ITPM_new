@@ -72,6 +72,9 @@
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DataVisualization.Design" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -89,6 +92,78 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="3mem1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3mem1.designer.cs">
+      <DependentUpon>3mem1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3mem2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3mem2.designer.cs">
+      <DependentUpon>3mem2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3mem3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3mem3.designer.cs">
+      <DependentUpon>3mem3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3mem4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3mem4.designer.cs">
+      <DependentUpon>3mem4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3mem5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3mem5.designer.cs">
+      <DependentUpon>3mem5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3mem6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3mem6.designer.cs">
+      <DependentUpon>3mem6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Non Overlapping Session.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Non Overlapping Session.designer.cs">
+      <DependentUpon>Add Non Overlapping Session.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Student Group.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Student Group.designer.cs">
+      <DependentUpon>Add Student Group.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Tag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Tag.designer.cs">
+      <DependentUpon>Add Tag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addConsecutive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addConsecutive.designer.cs">
+      <DependentUpon>addConsecutive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddLocation.designer.cs">
+      <DependentUpon>AddLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addLocationSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addLocationSession.designer.cs">
+      <DependentUpon>addLocationSession.cs</DependentUpon>
+    </Compile>
     <Compile Include="Add_Lec.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,30 +182,43 @@
     <Compile Include="Ads_sub.Designer.cs">
       <DependentUpon>Ads_sub.cs</DependentUpon>
     </Compile>
-    <Compile Include="dbConnection.cs" />
-    <Compile Include="AddLocation.cs">
+    <Compile Include="Consecutive Session .cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddLocation.Designer.cs">
-      <DependentUpon>AddLocation.cs</DependentUpon>
+    <Compile Include="Consecutive Session .designer.cs">
+      <DependentUpon>Consecutive Session .cs</DependentUpon>
     </Compile>
+    <Compile Include="DB.cs" />
+    <Compile Include="dbConnection.cs" />
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home.Designer.cs">
+    <Compile Include="Home.designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Student Group.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Student Group.designer.cs">
+      <DependentUpon>Manage Student Group.cs</DependentUpon>
     </Compile>
     <Compile Include="ManageLocation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManageLocation.Designer.cs">
+    <Compile Include="ManageLocation.designer.cs">
       <DependentUpon>ManageLocation.cs</DependentUpon>
     </Compile>
     <Compile Include="manageSessionRoom.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="manageSessionRoom.Designer.cs">
+    <Compile Include="manageSessionRoom.designer.cs">
       <DependentUpon>manageSessionRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_Tag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_Tag.designer.cs">
+      <DependentUpon>Manage_Tag.cs</DependentUpon>
     </Compile>
     <Compile Include="mng_lec.cs">
       <SubType>Form</SubType>
@@ -150,16 +238,68 @@
     <Compile Include="mng_sub.Designer.cs">
       <DependentUpon>mng_sub.cs</DependentUpon>
     </Compile>
+    <Compile Include="Parallel Session.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parallel Session.designer.cs">
+      <DependentUpon>Parallel Session.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TimeTableDao.cs" />
+    <Compile Include="View Non Overlapping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Non Overlapping.designer.cs">
+      <DependentUpon>View Non Overlapping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Parallel_Session.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Parallel_Session.designer.cs">
+      <DependentUpon>View_Parallel_Session.cs</DependentUpon>
+    </Compile>
     <Compile Include="VisulizingStatics.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VisulizingStatics.Designer.cs">
+    <Compile Include="VisulizingStatics.designer.cs">
       <DependentUpon>VisulizingStatics.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="3mem1.resx">
+      <DependentUpon>3mem1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3mem2.resx">
+      <DependentUpon>3mem2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3mem3.resx">
+      <DependentUpon>3mem3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3mem4.resx">
+      <DependentUpon>3mem4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3mem5.resx">
+      <DependentUpon>3mem5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3mem6.resx">
+      <DependentUpon>3mem6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Non Overlapping Session.resx">
+      <DependentUpon>Add Non Overlapping Session.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Student Group.resx">
+      <DependentUpon>Add Student Group.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Tag.resx">
+      <DependentUpon>Add Tag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addConsecutive.resx">
+      <DependentUpon>addConsecutive.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddLocation.resx">
       <DependentUpon>AddLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addLocationSession.resx">
+      <DependentUpon>addLocationSession.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Add_Lec.resx">
       <DependentUpon>Add_Lec.cs</DependentUpon>
@@ -170,14 +310,23 @@
     <EmbeddedResource Include="Ads_sub.resx">
       <DependentUpon>Ads_sub.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Consecutive Session .resx">
+      <DependentUpon>Consecutive Session .cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Student Group.resx">
+      <DependentUpon>Manage Student Group.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageLocation.resx">
       <DependentUpon>ManageLocation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="manageSessionRoom.resx">
       <DependentUpon>manageSessionRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_Tag.resx">
+      <DependentUpon>Manage_Tag.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mng_lec.resx">
       <DependentUpon>mng_lec.cs</DependentUpon>
@@ -188,6 +337,9 @@
     <EmbeddedResource Include="mng_sub.resx">
       <DependentUpon>mng_sub.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Parallel Session.resx">
+      <DependentUpon>Parallel Session.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -197,6 +349,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View Non Overlapping.resx">
+      <DependentUpon>View Non Overlapping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Parallel_Session.resx">
+      <DependentUpon>View_Parallel_Session.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VisulizingStatics.resx">
       <DependentUpon>VisulizingStatics.cs</DependentUpon>
     </EmbeddedResource>

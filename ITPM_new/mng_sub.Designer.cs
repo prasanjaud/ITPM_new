@@ -88,6 +88,7 @@ namespace ITPM_new
             this.button9.TabIndex = 55;
             this.button9.Text = "Statics";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button8
             // 
@@ -98,6 +99,7 @@ namespace ITPM_new
             this.button8.TabIndex = 54;
             this.button8.Text = "Advances and Sessions";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button7
             // 
@@ -108,6 +110,7 @@ namespace ITPM_new
             this.button7.TabIndex = 53;
             this.button7.Text = "Sessions";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -118,6 +121,7 @@ namespace ITPM_new
             this.button6.TabIndex = 52;
             this.button6.Text = "Tags";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -128,6 +132,7 @@ namespace ITPM_new
             this.button5.TabIndex = 51;
             this.button5.Text = "Locations";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -138,6 +143,7 @@ namespace ITPM_new
             this.button4.TabIndex = 50;
             this.button4.Text = "Working days and hours";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -148,6 +154,7 @@ namespace ITPM_new
             this.button3.TabIndex = 49;
             this.button3.Text = "Subject";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -158,6 +165,7 @@ namespace ITPM_new
             this.button2.TabIndex = 48;
             this.button2.Text = "Students";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -168,6 +176,7 @@ namespace ITPM_new
             this.button1.TabIndex = 47;
             this.button1.Text = "Lecturer";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ehour
             // 

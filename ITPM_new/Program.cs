@@ -16,7 +16,7 @@ namespace ITPM_new
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Add_Lec());
+            Application.Run(new VisulizingStatics());
         }
     }
 }

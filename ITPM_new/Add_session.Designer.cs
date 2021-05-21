@@ -61,6 +61,7 @@ namespace ITPM_new
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.subn = new System.Windows.Forms.ComboBox();
+            this.button14 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button10
@@ -82,6 +83,7 @@ namespace ITPM_new
             this.button9.TabIndex = 65;
             this.button9.Text = "Statics";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button8
             // 
@@ -92,6 +94,7 @@ namespace ITPM_new
             this.button8.TabIndex = 64;
             this.button8.Text = "Advances and Sessions";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button7
             // 
@@ -102,6 +105,7 @@ namespace ITPM_new
             this.button7.TabIndex = 63;
             this.button7.Text = "Sessions";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -112,6 +116,7 @@ namespace ITPM_new
             this.button6.TabIndex = 62;
             this.button6.Text = "Tags";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -122,6 +127,7 @@ namespace ITPM_new
             this.button5.TabIndex = 61;
             this.button5.Text = "Locations";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -132,6 +138,7 @@ namespace ITPM_new
             this.button4.TabIndex = 60;
             this.button4.Text = "Working days and hours";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -142,6 +149,7 @@ namespace ITPM_new
             this.button3.TabIndex = 59;
             this.button3.Text = "Subject";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -152,6 +160,7 @@ namespace ITPM_new
             this.button2.TabIndex = 58;
             this.button2.Text = "Students";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -162,6 +171,7 @@ namespace ITPM_new
             this.button1.TabIndex = 57;
             this.button1.Text = "Lecturer";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // lec
             // 
@@ -294,6 +304,7 @@ namespace ITPM_new
             this.view.Name = "view";
             this.view.Size = new System.Drawing.Size(786, 24);
             this.view.TabIndex = 82;
+            this.view.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button11
             // 
@@ -309,6 +320,7 @@ namespace ITPM_new
             // button12
             // 
             this.button12.BackColor = System.Drawing.Color.Blue;
+            this.button12.Enabled = false;
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.Location = new System.Drawing.Point(812, 497);
             this.button12.Name = "button12";
@@ -379,12 +391,25 @@ namespace ITPM_new
             this.subn.Size = new System.Drawing.Size(186, 21);
             this.subn.TabIndex = 91;
             // 
+            // button14
+            // 
+            this.button14.BackColor = System.Drawing.Color.DarkViolet;
+            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button14.Location = new System.Drawing.Point(369, 497);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(101, 43);
+            this.button14.TabIndex = 92;
+            this.button14.Text = "View";
+            this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click_1);
+            // 
             // Add_session
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(984, 584);
+            this.Controls.Add(this.button14);
             this.Controls.Add(this.subn);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.lec2);
@@ -460,5 +485,6 @@ namespace ITPM_new
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox subn;
+        private System.Windows.Forms.Button button14;
     }
 }
