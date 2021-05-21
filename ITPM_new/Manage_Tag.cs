@@ -123,7 +123,9 @@ namespace ITPM_new
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Form1 mform = new Form1();
+            mform.Show();
+            this.Hide();
         }
 
         private void label4_Click(object sender, EventArgs e)
