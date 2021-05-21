@@ -42,7 +42,7 @@ namespace ITPM_new
 
         public void loadData()
         {
-            query = "SELECT * FROM rooms";
+            query = "SELECT buildingName AS BuildingName, roomName AS RoomName, roomType AS RoomType, capacity AS Capacity FROM rooms";
             DataSet ds = con.getData(query);
             dataGridViewRoom.DataSource = ds.Tables[0];
         }
@@ -159,9 +159,7 @@ namespace ITPM_new
 
         private void locationsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AddLocation mform = new AddLocation();
-            mform.Show();
-            this.Hide();
+            
         }
 
         private void lecturesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -190,6 +188,20 @@ namespace ITPM_new
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void manageSessionRoomToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            manageSessionRoom msform = new manageSessionRoom();
+            msform.Show();
+        }
+
+        private void addRoomForSessionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            addLocationSession form = new addLocationSession();
+            form.Show();
         }
     }
 }

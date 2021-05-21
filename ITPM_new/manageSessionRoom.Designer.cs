@@ -37,20 +37,7 @@ namespace ITPM_new
             this.txtBoxSelectedSession = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.lecturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.studentGroupsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.subjectsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tagsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.locationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addLocationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.manageLocationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.staticsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sessionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.workingDaysAndHoursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.advancedSessionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblHeading = new System.Windows.Forms.Label();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblSelectSession
@@ -144,107 +131,6 @@ namespace ITPM_new
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lecturesToolStripMenuItem,
-            this.studentGroupsToolStripMenuItem,
-            this.subjectsToolStripMenuItem,
-            this.tagsToolStripMenuItem,
-            this.locationsToolStripMenuItem,
-            this.staticsToolStripMenuItem,
-            this.sessionsToolStripMenuItem,
-            this.workingDaysAndHoursToolStripMenuItem,
-            this.advancedSessionsToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(785, 24);
-            this.menuStrip1.TabIndex = 32;
-            this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
-            // 
-            // lecturesToolStripMenuItem
-            // 
-            this.lecturesToolStripMenuItem.Name = "lecturesToolStripMenuItem";
-            this.lecturesToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
-            this.lecturesToolStripMenuItem.Text = "Lectures";
-            this.lecturesToolStripMenuItem.Click += new System.EventHandler(this.lecturesToolStripMenuItem_Click);
-            // 
-            // studentGroupsToolStripMenuItem
-            // 
-            this.studentGroupsToolStripMenuItem.Name = "studentGroupsToolStripMenuItem";
-            this.studentGroupsToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
-            this.studentGroupsToolStripMenuItem.Text = "Student Groups";
-            this.studentGroupsToolStripMenuItem.Click += new System.EventHandler(this.studentGroupsToolStripMenuItem_Click);
-            // 
-            // subjectsToolStripMenuItem
-            // 
-            this.subjectsToolStripMenuItem.Name = "subjectsToolStripMenuItem";
-            this.subjectsToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
-            this.subjectsToolStripMenuItem.Text = "Subjects";
-            this.subjectsToolStripMenuItem.Click += new System.EventHandler(this.subjectsToolStripMenuItem_Click);
-            // 
-            // tagsToolStripMenuItem
-            // 
-            this.tagsToolStripMenuItem.Name = "tagsToolStripMenuItem";
-            this.tagsToolStripMenuItem.Size = new System.Drawing.Size(42, 20);
-            this.tagsToolStripMenuItem.Text = "Tags";
-            this.tagsToolStripMenuItem.Click += new System.EventHandler(this.tagsToolStripMenuItem_Click);
-            // 
-            // locationsToolStripMenuItem
-            // 
-            this.locationsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addLocationsToolStripMenuItem,
-            this.manageLocationsToolStripMenuItem});
-            this.locationsToolStripMenuItem.Name = "locationsToolStripMenuItem";
-            this.locationsToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
-            this.locationsToolStripMenuItem.Text = "Locations";
-            this.locationsToolStripMenuItem.Click += new System.EventHandler(this.locationsToolStripMenuItem_Click);
-            // 
-            // addLocationsToolStripMenuItem
-            // 
-            this.addLocationsToolStripMenuItem.Name = "addLocationsToolStripMenuItem";
-            this.addLocationsToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
-            this.addLocationsToolStripMenuItem.Text = "Add Locations";
-            this.addLocationsToolStripMenuItem.Click += new System.EventHandler(this.addLocationsToolStripMenuItem_Click);
-            // 
-            // manageLocationsToolStripMenuItem
-            // 
-            this.manageLocationsToolStripMenuItem.Name = "manageLocationsToolStripMenuItem";
-            this.manageLocationsToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
-            this.manageLocationsToolStripMenuItem.Text = "Manage Locations";
-            this.manageLocationsToolStripMenuItem.Click += new System.EventHandler(this.manageLocationsToolStripMenuItem_Click);
-            // 
-            // staticsToolStripMenuItem
-            // 
-            this.staticsToolStripMenuItem.Name = "staticsToolStripMenuItem";
-            this.staticsToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.staticsToolStripMenuItem.Text = "Statics";
-            this.staticsToolStripMenuItem.Click += new System.EventHandler(this.staticsToolStripMenuItem_Click);
-            // 
-            // sessionsToolStripMenuItem
-            // 
-            this.sessionsToolStripMenuItem.Name = "sessionsToolStripMenuItem";
-            this.sessionsToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
-            this.sessionsToolStripMenuItem.Text = "Sessions";
-            this.sessionsToolStripMenuItem.Click += new System.EventHandler(this.sessionsToolStripMenuItem_Click);
-            // 
-            // workingDaysAndHoursToolStripMenuItem
-            // 
-            this.workingDaysAndHoursToolStripMenuItem.Name = "workingDaysAndHoursToolStripMenuItem";
-            this.workingDaysAndHoursToolStripMenuItem.Size = new System.Drawing.Size(150, 20);
-            this.workingDaysAndHoursToolStripMenuItem.Text = "Working Days and Hours";
-            this.workingDaysAndHoursToolStripMenuItem.Click += new System.EventHandler(this.workingDaysAndHoursToolStripMenuItem_Click);
-            // 
-            // advancedSessionsToolStripMenuItem
-            // 
-            this.advancedSessionsToolStripMenuItem.Checked = true;
-            this.advancedSessionsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.advancedSessionsToolStripMenuItem.Name = "advancedSessionsToolStripMenuItem";
-            this.advancedSessionsToolStripMenuItem.Size = new System.Drawing.Size(119, 20);
-            this.advancedSessionsToolStripMenuItem.Text = "Advanced Sessions";
-            this.advancedSessionsToolStripMenuItem.Click += new System.EventHandler(this.advancedSessionsToolStripMenuItem_Click);
-            // 
             // lblHeading
             // 
             this.lblHeading.AutoSize = true;
@@ -263,7 +149,6 @@ namespace ITPM_new
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(120)))), ((int)(((byte)(126)))));
             this.ClientSize = new System.Drawing.Size(785, 388);
             this.Controls.Add(this.lblHeading);
-            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.txtBoxSelectedSession);
@@ -278,8 +163,6 @@ namespace ITPM_new
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manage Session Room";
             this.Load += new System.EventHandler(this.manageSessionRoom_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -294,18 +177,6 @@ namespace ITPM_new
         private System.Windows.Forms.TextBox txtBoxSelectedSession;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem lecturesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem studentGroupsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem subjectsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tagsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem locationsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem addLocationsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem manageLocationsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem staticsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sessionsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem workingDaysAndHoursToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem advancedSessionsToolStripMenuItem;
         private System.Windows.Forms.Label lblHeading;
     }
 }

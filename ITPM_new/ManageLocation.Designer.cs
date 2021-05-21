@@ -55,6 +55,7 @@ namespace ITPM_new
             this.sessionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.workingDaysAndHoursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.advancedSessionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addRoomForSessionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRoom)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -63,11 +64,12 @@ namespace ITPM_new
             // 
             this.btnUpdate.BackColor = System.Drawing.Color.RoyalBlue;
             this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpdate.FlatAppearance.BorderSize = 2;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnUpdate.Location = new System.Drawing.Point(432, 293);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(77, 26);
+            this.btnUpdate.Size = new System.Drawing.Size(85, 30);
             this.btnUpdate.TabIndex = 23;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -81,7 +83,7 @@ namespace ITPM_new
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnClear.Location = new System.Drawing.Point(674, 293);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(77, 26);
+            this.btnClear.Size = new System.Drawing.Size(85, 30);
             this.btnClear.TabIndex = 22;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
@@ -192,7 +194,7 @@ namespace ITPM_new
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnDelete.Location = new System.Drawing.Point(556, 293);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(77, 26);
+            this.btnDelete.Size = new System.Drawing.Size(85, 30);
             this.btnDelete.TabIndex = 25;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -260,7 +262,8 @@ namespace ITPM_new
             // 
             this.locationsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addLocationsToolStripMenuItem,
-            this.manageLocationsToolStripMenuItem});
+            this.manageLocationsToolStripMenuItem,
+            this.addRoomForSessionToolStripMenuItem});
             this.locationsToolStripMenuItem.Name = "locationsToolStripMenuItem";
             this.locationsToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
             this.locationsToolStripMenuItem.Text = "Locations";
@@ -269,14 +272,14 @@ namespace ITPM_new
             // addLocationsToolStripMenuItem
             // 
             this.addLocationsToolStripMenuItem.Name = "addLocationsToolStripMenuItem";
-            this.addLocationsToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.addLocationsToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.addLocationsToolStripMenuItem.Text = "Add Locations";
             this.addLocationsToolStripMenuItem.Click += new System.EventHandler(this.addLocationsToolStripMenuItem_Click);
             // 
             // manageLocationsToolStripMenuItem
             // 
             this.manageLocationsToolStripMenuItem.Name = "manageLocationsToolStripMenuItem";
-            this.manageLocationsToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.manageLocationsToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.manageLocationsToolStripMenuItem.Text = "Manage Locations";
             this.manageLocationsToolStripMenuItem.Click += new System.EventHandler(this.manageLocationsToolStripMenuItem_Click);
             // 
@@ -307,6 +310,13 @@ namespace ITPM_new
             this.advancedSessionsToolStripMenuItem.Size = new System.Drawing.Size(119, 20);
             this.advancedSessionsToolStripMenuItem.Text = "Advanced Sessions";
             this.advancedSessionsToolStripMenuItem.Click += new System.EventHandler(this.advancedSessionsToolStripMenuItem_Click);
+            // 
+            // addRoomForSessionToolStripMenuItem
+            // 
+            this.addRoomForSessionToolStripMenuItem.Name = "addRoomForSessionToolStripMenuItem";
+            this.addRoomForSessionToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.addRoomForSessionToolStripMenuItem.Text = "Add Room for Session";
+            this.addRoomForSessionToolStripMenuItem.Click += new System.EventHandler(this.addRoomForSessionToolStripMenuItem_Click);
             // 
             // ManageLocation
             // 
@@ -371,5 +381,6 @@ namespace ITPM_new
         private System.Windows.Forms.ToolStripMenuItem sessionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem workingDaysAndHoursToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem advancedSessionsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addRoomForSessionToolStripMenuItem;
     }
 }

@@ -47,7 +47,7 @@ namespace ITPM_new
             this.lblHeading.AutoSize = true;
             this.lblHeading.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.lblHeading.ForeColor = System.Drawing.Color.Yellow;
-            this.lblHeading.Location = new System.Drawing.Point(253, 58);
+            this.lblHeading.Location = new System.Drawing.Point(253, 51);
             this.lblHeading.Name = "lblHeading";
             this.lblHeading.Size = new System.Drawing.Size(321, 29);
             this.lblHeading.TabIndex = 43;

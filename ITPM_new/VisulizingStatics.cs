@@ -41,6 +41,8 @@ namespace ITPM_new
 
         public void loadData()
         {
+            int lab, lec;
+
             query = "SELECT * FROM rooms";
             DataSet ds = con.getData(query);
             lblRoomCount.Text = ds.Tables[0].Rows.Count.ToString();
@@ -69,17 +71,23 @@ namespace ITPM_new
             DataSet ds6 = con.getData(query);
             txtLatestSubject.Text = ds6.Tables[0].Rows[0][1].ToString();
 
-            query = "SELECT * FROM rooms";
+            query = "SELECT * FROM rooms WHERE roomType='Lecture Hall'";
             DataSet ds7 = con.getData(query);
-            chart1.Series["Lecture Rooms"].XValueMember = "roomType";
-            chart1.Series["Lecture Rooms"].YValueMembers = "capacity";
+            lec = ds7.Tables[0].Rows.Count;
+
+            query = "SELECT * FROM rooms WHERE roomType='Laboratory'";
+            DataSet ds8 = con.getData(query);
+            lab = ds8.Tables[0].Rows.Count;
+
+            chart1.Series["Lecture Rooms"].Points.AddXY("Location", lec);
+            chart1.Series["Laboratories"].Points.AddXY("Location", lab);
             chart1.DataSource = ds7.Tables[0];
 
-            query = "SELECT * FROM rooms";
+            /*query = "SELECT * FROM rooms";
             DataSet ds8 = con.getData(query);
             chart1.Series["Laboratories"].XValueMember = "roomType";
             chart1.Series["Laboratories"].YValueMembers = "capacity";
-            chart1.DataSource = ds8.Tables[0];
+            chart1.DataSource = ds8.Tables[0];*/
         }
 
         private void lecturesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -160,6 +168,13 @@ namespace ITPM_new
             Form1 mform = new Form1();
             mform.Show();
             this.Hide();
+        }
+
+        private void addRoomForSessionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            addLocationSession form = new addLocationSession();
+            form.Show();
         }
     }
 }

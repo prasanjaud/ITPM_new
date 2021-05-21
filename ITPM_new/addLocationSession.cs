@@ -64,5 +64,38 @@ namespace ITPM_new
             form2.Show(this);
             Hide();
         }
+
+        private void addLocationsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddLocation f1 = new AddLocation();
+            f1.Show();
+        }
+
+        private void manageLocationsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ManageLocation form2 = new ManageLocation();
+            form2.Show();
+        }
+
+        private void manageSessionRoomToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            manageSessionRoom msform = new manageSessionRoom();
+            msform.Show();
+        }
+
+        private void locationsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addRoomForSessionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            addLocationSession form = new addLocationSession();
+            form.Show();
+        }
     }
 }

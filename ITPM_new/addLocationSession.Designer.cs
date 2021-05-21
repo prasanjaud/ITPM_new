@@ -40,11 +40,25 @@ namespace ITPM_new
             this.dataGridViewSession = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.button1 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.lecturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.studentGroupsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.subjectsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tagsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.locationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addLocationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.manageLocationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.staticsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sessionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.workingDaysAndHoursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.advancedSessionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addRoomForSessionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewConsecutive)).BeginInit();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSession)).BeginInit();
             this.tabControl1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblHeading
@@ -187,12 +201,111 @@ namespace ITPM_new
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lecturesToolStripMenuItem,
+            this.studentGroupsToolStripMenuItem,
+            this.subjectsToolStripMenuItem,
+            this.tagsToolStripMenuItem,
+            this.locationsToolStripMenuItem,
+            this.staticsToolStripMenuItem,
+            this.sessionsToolStripMenuItem,
+            this.workingDaysAndHoursToolStripMenuItem,
+            this.advancedSessionsToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(785, 24);
+            this.menuStrip1.TabIndex = 31;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // lecturesToolStripMenuItem
+            // 
+            this.lecturesToolStripMenuItem.Name = "lecturesToolStripMenuItem";
+            this.lecturesToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
+            this.lecturesToolStripMenuItem.Text = "Lectures";
+            // 
+            // studentGroupsToolStripMenuItem
+            // 
+            this.studentGroupsToolStripMenuItem.Name = "studentGroupsToolStripMenuItem";
+            this.studentGroupsToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
+            this.studentGroupsToolStripMenuItem.Text = "Student Groups";
+            // 
+            // subjectsToolStripMenuItem
+            // 
+            this.subjectsToolStripMenuItem.Name = "subjectsToolStripMenuItem";
+            this.subjectsToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
+            this.subjectsToolStripMenuItem.Text = "Subjects";
+            // 
+            // tagsToolStripMenuItem
+            // 
+            this.tagsToolStripMenuItem.Name = "tagsToolStripMenuItem";
+            this.tagsToolStripMenuItem.Size = new System.Drawing.Size(42, 20);
+            this.tagsToolStripMenuItem.Text = "Tags";
+            // 
+            // locationsToolStripMenuItem
+            // 
+            this.locationsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addLocationsToolStripMenuItem,
+            this.manageLocationsToolStripMenuItem,
+            this.addRoomForSessionToolStripMenuItem});
+            this.locationsToolStripMenuItem.Name = "locationsToolStripMenuItem";
+            this.locationsToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.locationsToolStripMenuItem.Text = "Locations";
+            this.locationsToolStripMenuItem.Click += new System.EventHandler(this.locationsToolStripMenuItem_Click);
+            // 
+            // addLocationsToolStripMenuItem
+            // 
+            this.addLocationsToolStripMenuItem.Name = "addLocationsToolStripMenuItem";
+            this.addLocationsToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.addLocationsToolStripMenuItem.Text = "Add Locations";
+            this.addLocationsToolStripMenuItem.Click += new System.EventHandler(this.addLocationsToolStripMenuItem_Click);
+            // 
+            // manageLocationsToolStripMenuItem
+            // 
+            this.manageLocationsToolStripMenuItem.Name = "manageLocationsToolStripMenuItem";
+            this.manageLocationsToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.manageLocationsToolStripMenuItem.Text = "Manage Locations";
+            this.manageLocationsToolStripMenuItem.Click += new System.EventHandler(this.manageLocationsToolStripMenuItem_Click);
+            // 
+            // staticsToolStripMenuItem
+            // 
+            this.staticsToolStripMenuItem.Name = "staticsToolStripMenuItem";
+            this.staticsToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.staticsToolStripMenuItem.Text = "Statics";
+            // 
+            // sessionsToolStripMenuItem
+            // 
+            this.sessionsToolStripMenuItem.Name = "sessionsToolStripMenuItem";
+            this.sessionsToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
+            this.sessionsToolStripMenuItem.Text = "Sessions";
+            // 
+            // workingDaysAndHoursToolStripMenuItem
+            // 
+            this.workingDaysAndHoursToolStripMenuItem.Name = "workingDaysAndHoursToolStripMenuItem";
+            this.workingDaysAndHoursToolStripMenuItem.Size = new System.Drawing.Size(150, 20);
+            this.workingDaysAndHoursToolStripMenuItem.Text = "Working Days and Hours";
+            // 
+            // advancedSessionsToolStripMenuItem
+            // 
+            this.advancedSessionsToolStripMenuItem.Name = "advancedSessionsToolStripMenuItem";
+            this.advancedSessionsToolStripMenuItem.Size = new System.Drawing.Size(119, 20);
+            this.advancedSessionsToolStripMenuItem.Text = "Advanced Sessions";
+            // 
+            // addRoomForSessionToolStripMenuItem
+            // 
+            this.addRoomForSessionToolStripMenuItem.Name = "addRoomForSessionToolStripMenuItem";
+            this.addRoomForSessionToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.addRoomForSessionToolStripMenuItem.Text = "Add Room for Session";
+            this.addRoomForSessionToolStripMenuItem.Click += new System.EventHandler(this.addRoomForSessionToolStripMenuItem_Click);
+            // 
             // addLocationSession
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(120)))), ((int)(((byte)(126)))));
             this.ClientSize = new System.Drawing.Size(785, 450);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.lblHeading);
@@ -205,6 +318,8 @@ namespace ITPM_new
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSession)).EndInit();
             this.tabControl1.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,5 +338,18 @@ namespace ITPM_new
         private System.Windows.Forms.DataGridView dataGridViewSession;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem lecturesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem studentGroupsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem subjectsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tagsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem locationsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addLocationsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem manageLocationsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem staticsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sessionsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem workingDaysAndHoursToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem advancedSessionsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addRoomForSessionToolStripMenuItem;
     }
 }

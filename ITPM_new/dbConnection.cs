@@ -15,7 +15,7 @@ namespace ITPM_new
         protected MySqlConnection getConnection()
         {
             MySqlConnection con = new MySqlConnection();
-            con.ConnectionString = "Server=localhost;Uid=root;password=;Database=itpm;";
+            con.ConnectionString = "Server=localhost;Uid=root;password=root;Database=itpm;";
             return con;
         }
 

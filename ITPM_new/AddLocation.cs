@@ -133,14 +133,26 @@ namespace ITPM_new
 
         private void locationsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AddLocation mform = new AddLocation();
-            mform.Show();
-            this.Hide();
+            
         }
 
         private void btnLecture_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void manageSessionRoomsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            manageSessionRoom msform = new manageSessionRoom();
+            msform.Show();
+        }
+
+        private void addRoomForSessionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            addLocationSession form = new addLocationSession();
+            form.Show();
         }
     }
 }
