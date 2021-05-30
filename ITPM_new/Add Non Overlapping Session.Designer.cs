@@ -502,6 +502,8 @@ namespace ITPM_new
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Add_Non_Overlapping_Session";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add_Non_Overlapping_Session";

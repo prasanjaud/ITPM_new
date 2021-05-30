@@ -76,6 +76,16 @@ namespace ITPM_new
                     //dataGridView1.Rows.Clear();
                     da.Fill(ds, "dept");
                     dataGridView1.DataSource = ds.Tables["dept"];
+
+                    sname.Text = "";
+                    scode.Text = "";
+                    year.Text = "";
+                    rd1.Checked = false;
+                    rd2.Checked = false;
+                    lechour.Text = "";
+                    labhour.Text = "";
+                    thour.Text = "";
+                    ehour.Text = "";
                 }
                 else
                 {
@@ -197,6 +207,19 @@ namespace ITPM_new
             AddLocation mform = new AddLocation();
             mform.Show();
             this.Hide();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            sname.Text = "";
+            scode.Text = "";
+            year.Text = "";
+            rd1.Checked = false;
+            rd2.Checked = false;
+            lechour.Text = "";
+            labhour.Text = "";
+            thour.Text = "";
+            ehour.Text = "";
         }
     }
 }

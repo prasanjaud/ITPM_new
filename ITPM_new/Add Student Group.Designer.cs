@@ -337,7 +337,7 @@ namespace ITPM_new
             "IT",
             "ISE",
             "CSNE",
-            "CS",
+            "CSE",
             "IM",
             "DS",
             "SE"});
@@ -416,6 +416,8 @@ namespace ITPM_new
             this.Controls.Add(this.button2);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Semester Time Table";

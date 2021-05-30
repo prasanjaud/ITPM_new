@@ -13,6 +13,8 @@ namespace ITPM_new
 {
     public partial class _3mem4 : Form
     {
+        dbConnection con = new dbConnection();
+        String query;
         public _3mem4()
         {
             InitializeComponent();
@@ -41,6 +43,51 @@ namespace ITPM_new
             ds = new DataSet();
             da.Fill(ds, "dept");
             dataGridView1.DataSource = ds.Tables["dept"];
+
+            LoadData1();
+            LoadData2();
+            LoadData3();
+            LoadData4();
+        }
+
+        public void LoadData1()
+        {
+            query = "SELECT lecturer_Name FROM lectureinfo";
+            DataSet ds = con.getData(query);
+            for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
+                comboBox1.Items.Add(ds.Tables[0].Rows[i][0].ToString());
+
+
+        }
+
+        public void LoadData2()
+        {
+            query = "SELECT grp_id FROM student";
+            DataSet ds = con.getData(query);
+            for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
+                comboBox2.Items.Add(ds.Tables[0].Rows[i][0].ToString());
+
+
+        }
+
+        public void LoadData3()
+        {
+            query = "SELECT sub_grp_id  FROM student";
+            DataSet ds = con.getData(query);
+            for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
+                comboBox3.Items.Add(ds.Tables[0].Rows[i][0].ToString());
+
+
+        }
+
+        public void LoadData4()
+        {
+            query = "SELECT s_id FROM session";
+            DataSet ds = con.getData(query);
+            for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
+                comboBox4.Items.Add(ds.Tables[0].Rows[i][0].ToString());
+
+
         }
 
         private void label8_Click(object sender, EventArgs e)
@@ -111,7 +158,7 @@ namespace ITPM_new
 
         private void button4_Click(object sender, EventArgs e)
         {
-           _3mem1 mform = new _3mem1();
+            _3mem1 mform = new _3mem1();
             mform.Show();
             this.Hide();
         }

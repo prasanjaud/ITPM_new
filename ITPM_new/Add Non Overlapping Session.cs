@@ -23,9 +23,9 @@ namespace ITPM_new
         private void Add_Non_Overlapping_Session_Load(object sender, EventArgs e)
         {
             cn = new MySqlConnection("server=localhost;user id=root; database=itpm");
-            da = new MySqlDataAdapter("Select * from session_table", cn);
+            da = new MySqlDataAdapter("Select * from session", cn);
 
-            string selectQuery = "Select Session_ID,lecture1, lecture2,subject_code, subject_name, group_id , tag from session_table";
+            string selectQuery = "Select overview from session";
 
             cn.Open();
             MySqlCommand command = new MySqlCommand(selectQuery, cn);
@@ -33,10 +33,10 @@ namespace ITPM_new
 
             while (reader.Read())
             {
-                comboBox1.Items.Add(reader.GetString("Session_ID") + ' ' + reader.GetString("lecture1") + ' ' + reader.GetString("lecture2") + ' ' + reader.GetString("subject_code") + ' ' + reader.GetString("subject_name") + ' ' + reader.GetString("group_id") + ' ' + reader.GetString("tag"));
+                comboBox1.Items.Add(reader.GetString("overview"));
 
 
-                comboBox2.Items.Add(reader.GetString("Session_ID") + ' ' + reader.GetString("lecture1") + ' ' + reader.GetString("lecture2") + ' ' + reader.GetString("subject_code") + ' ' + reader.GetString("subject_name") + ' ' + reader.GetString("group_id") + ' ' + reader.GetString("tag"));
+                comboBox2.Items.Add(reader.GetString("overview"));
             }
 
             cn.Close();

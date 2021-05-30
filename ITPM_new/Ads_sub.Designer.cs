@@ -419,6 +419,8 @@ namespace ITPM_new
             this.Controls.Add(this.button22);
             this.Controls.Add(this.button23);
             this.Controls.Add(this.button24);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Add_sub";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Add_sub_Load);

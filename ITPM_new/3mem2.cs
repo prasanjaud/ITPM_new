@@ -26,7 +26,14 @@ namespace ITPM_new
             label4.Text = row.Cells[0].Value.ToString();
             numericUpDown1.Text = row.Cells[1].Value.ToString();
             checkBox1.Text = row.Cells[2].Value.ToString();
-            textBox1.Text = row.Cells[3].Value.ToString();
+            checkBox2.Text = row.Cells[3].Value.ToString();
+            checkBox3.Text = row.Cells[4].Value.ToString();
+            checkBox4.Text = row.Cells[5].Value.ToString();
+            checkBox5.Text = row.Cells[6].Value.ToString();
+            checkBox6.Text = row.Cells[7].Value.ToString();
+            checkBox7.Text = row.Cells[8].Value.ToString();
+            textBox1.Text = row.Cells[9].Value.ToString();
+
         }
 
         private void btnWvUpdate_Click(object sender, EventArgs e)
@@ -36,7 +43,7 @@ namespace ITPM_new
             {
 
                 DB abc_dbDB = new DB();
-                string sql = "UPDATE days SET Noofdays = '" + this.numericUpDown1.Text + "',workingdays = '" + this.checkBox1.Text + "',workingtime='" + this.textBox1.Text + "'WHERE iddays ='" + label4.Text + "';";
+                string sql = "UPDATE ddays SET Noofdays = '" + this.numericUpDown1.Text + "',monday = '" + this.checkBox1.Text + "', tuesday = '" + this.checkBox2.Text + "' , wednesday = '" + this.checkBox3.Text + "', thursday='" + this.checkBox4.Text + "', friday = '" + this.checkBox5.Text + "',saturday='" + this.checkBox6.Text + "',sunday='" + this.checkBox7.Text + "',workingtime='" + this.textBox1.Text + "' WHERE idddays ='" + label4.Text + "';";
                 abc_dbDB.excecuteSQL(sql);
                 dataGridView1.Refresh();
 
@@ -51,7 +58,7 @@ namespace ITPM_new
         private void _3mem2_Load(object sender, EventArgs e)
         {
             cn = new MySqlConnection("server = localhost; user id = root; database =itpm; ");
-            da = new MySqlDataAdapter("Select * from days", cn);
+            da = new MySqlDataAdapter("Select * from ddays", cn);
             ds = new DataSet();
             da.Fill(ds, "dept");
             dataGridView1.DataSource = ds.Tables["dept"];
@@ -62,7 +69,7 @@ namespace ITPM_new
             try
             {
                 cn = new MySqlConnection("server = localhost; user id = root; database = itpm; ");
-                da = new MySqlDataAdapter("Select * from days", cn);
+                da = new MySqlDataAdapter("Select * from ddays", cn);
                 ds = new DataSet();
                 da.Fill(ds, "dept");
                 dataGridView1.DataSource = ds.Tables["dept"];
@@ -80,7 +87,7 @@ namespace ITPM_new
             try
             {
                 DB itpmDB = new DB();
-                String sql = "DELETE FROM days WHERE iddays ='" + label4.Text + "';";
+                String sql = "DELETE FROM ddays WHERE idddays ='" + label4.Text + "';";
                 itpmDB.excecuteSQL(sql);
                 dataGridView1.Refresh();
 

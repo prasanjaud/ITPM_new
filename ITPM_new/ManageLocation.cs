@@ -42,7 +42,7 @@ namespace ITPM_new
 
         public void loadData()
         {
-            query = "SELECT buildingName AS BuildingName, roomName AS RoomName, roomType AS RoomType, capacity AS Capacity FROM rooms";
+            query = "SELECT id AS ID, buildingName AS BuildingName, roomName AS RoomName, roomType AS RoomType, capacity AS Capacity FROM rooms";
             DataSet ds = con.getData(query);
             dataGridViewRoom.DataSource = ds.Tables[0];
         }

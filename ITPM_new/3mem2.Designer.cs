@@ -448,6 +448,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.hScrollBar1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "_3mem2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "_3mem2";

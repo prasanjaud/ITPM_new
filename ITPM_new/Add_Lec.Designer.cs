@@ -345,7 +345,7 @@ namespace ITPM_new
             this.department.FormattingEnabled = true;
             this.department.Items.AddRange(new object[] {
             "IT ",
-            "CS",
+            "SE",
             "DS",
             "IM",
             "Civil ",
@@ -377,7 +377,8 @@ namespace ITPM_new
             this.building.FormattingEnabled = true;
             this.building.Items.AddRange(new object[] {
             "New Bulding",
-            "Main Building"});
+            "Main Building",
+            "D-Block"});
             this.building.Location = new System.Drawing.Point(730, 236);
             this.building.Name = "building";
             this.building.Size = new System.Drawing.Size(186, 21);
@@ -448,6 +449,8 @@ namespace ITPM_new
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Add_Lec";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ADD_Lecturer";

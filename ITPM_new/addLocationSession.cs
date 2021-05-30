@@ -88,7 +88,9 @@ namespace ITPM_new
 
         private void locationsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            AddLocation mform = new AddLocation();
+            mform.Show();
+            this.Hide();
         }
 
         private void addRoomForSessionToolStripMenuItem_Click(object sender, EventArgs e)
@@ -96,6 +98,66 @@ namespace ITPM_new
             this.Hide();
             addLocationSession form = new addLocationSession();
             form.Show();
+        }
+
+        private void lecturesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Add_Lec form2 = new Add_Lec();
+            form2.Tag = this;
+            form2.Show(this);
+            Hide();
+        }
+
+        private void studentGroupsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 mform = new Form1();
+            mform.Show();
+            this.Hide();
+        }
+
+        private void subjectsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Add_sub form2 = new Add_sub();
+            form2.Tag = this;
+            form2.Show(this);
+            Hide();
+        }
+
+        private void workingDaysAndHoursToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _3mem1 mform = new _3mem1();
+            mform.Show();
+            this.Hide();
+        }
+
+        private void tagsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Add_Tag mform = new Add_Tag();
+            mform.Show();
+            this.Hide();
+        }
+
+        private void sessionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Add_session form2 = new Add_session();
+            form2.Tag = this;
+            form2.Show(this);
+            Hide();
+        }
+
+        private void staticsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            VisulizingStatics form2 = new VisulizingStatics();
+            form2.Tag = this;
+            form2.Show(this);
+            Hide();
+        }
+
+        private void advancedSessionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Consecutive_Session mform = new Consecutive_Session();
+            mform.Show();
+            this.Hide();
         }
     }
 }

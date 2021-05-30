@@ -17,7 +17,19 @@ namespace ITPM_new
         {
             InitializeComponent();
         }
-      
+
+        MySqlConnection cn;
+        MySqlDataAdapter da;
+        DataSet ds;
+
+        String Monday = "";
+        String Tuesday = "";
+        String Wednesday = "";
+        String Thursday = "";
+        String Friday = "";
+        String Saturday = "";
+        String Sunday = "";
+
         private void _3mem1_Load(object sender, EventArgs e)
         {
 
@@ -25,10 +37,66 @@ namespace ITPM_new
 
         private void btnWADD_Click(object sender, EventArgs e)
         {
+            if (checkBox1.Checked)
+            {
+                Monday = "Monday";
+            }
+            else
+            {
+                Monday = "";
+            }
+            if (checkBox2.Checked)
+            {
+                Tuesday = "Tuesday";
+            }
+            else
+            {
+                Tuesday = "";
+            }
+            if (checkBox3.Checked)
+            {
+                Wednesday = "Wednesday";
+            }
+            else
+            {
+                Wednesday = "";
+            }
+            if (checkBox4.Checked)
+            {
+                Thursday = "Thursday";
+            }
+            else
+            {
+                Thursday = "";
+            }
+            if (checkBox5.Checked)
+            {
+                Friday = "Friday";
+            }
+            else
+            {
+                Friday = "";
+            }
+            if (checkBox6.Checked)
+            {
+                Saturday = "Saturday";
+            }
+            else
+            {
+                Saturday = "";
+            }
+            if (checkBox7.Checked)
+            {
+                Sunday = "Sunday";
+            }
+            else
+            {
+                Sunday = "";
+            }
             try
             {
                 DB abc_dbDB = new DB();
-                string sql = "INSERT INTO days(Noofdays,workingdays,workingtime)values('" + this.numericUpDown1.Text + "','" + this.checkBox1.Text + "','" + this.textBox1.Text + "')";
+                string sql = "INSERT INTO ddays(Noofdays,monday,tuesday,wednesday,thursday,friday,workingtime)values('" + this.numericUpDown1.Text + "','" + Monday + "','" + Tuesday + "','" + Wednesday + "','" + Thursday + "','" + Friday + "','" + Saturday + "','" + Sunday + "','" + this.textBox1.Text + "')";
                 abc_dbDB.excecuteSQL(sql);
                 MessageBox.Show("Data Add successfully");
             }

@@ -48,11 +48,11 @@ namespace ITPM_new
             this.locationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addLocationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageLocationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addRoomForSessionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.staticsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sessionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.workingDaysAndHoursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.advancedSessionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addRoomForSessionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewConsecutive)).BeginInit();
             this.tabPage1.SuspendLayout();
@@ -224,24 +224,28 @@ namespace ITPM_new
             this.lecturesToolStripMenuItem.Name = "lecturesToolStripMenuItem";
             this.lecturesToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
             this.lecturesToolStripMenuItem.Text = "Lectures";
+            this.lecturesToolStripMenuItem.Click += new System.EventHandler(this.lecturesToolStripMenuItem_Click);
             // 
             // studentGroupsToolStripMenuItem
             // 
             this.studentGroupsToolStripMenuItem.Name = "studentGroupsToolStripMenuItem";
             this.studentGroupsToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
             this.studentGroupsToolStripMenuItem.Text = "Student Groups";
+            this.studentGroupsToolStripMenuItem.Click += new System.EventHandler(this.studentGroupsToolStripMenuItem_Click);
             // 
             // subjectsToolStripMenuItem
             // 
             this.subjectsToolStripMenuItem.Name = "subjectsToolStripMenuItem";
             this.subjectsToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
             this.subjectsToolStripMenuItem.Text = "Subjects";
+            this.subjectsToolStripMenuItem.Click += new System.EventHandler(this.subjectsToolStripMenuItem_Click);
             // 
             // tagsToolStripMenuItem
             // 
             this.tagsToolStripMenuItem.Name = "tagsToolStripMenuItem";
             this.tagsToolStripMenuItem.Size = new System.Drawing.Size(42, 20);
             this.tagsToolStripMenuItem.Text = "Tags";
+            this.tagsToolStripMenuItem.Click += new System.EventHandler(this.tagsToolStripMenuItem_Click);
             // 
             // locationsToolStripMenuItem
             // 
@@ -257,40 +261,16 @@ namespace ITPM_new
             // addLocationsToolStripMenuItem
             // 
             this.addLocationsToolStripMenuItem.Name = "addLocationsToolStripMenuItem";
-            this.addLocationsToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.addLocationsToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.addLocationsToolStripMenuItem.Text = "Add Locations";
             this.addLocationsToolStripMenuItem.Click += new System.EventHandler(this.addLocationsToolStripMenuItem_Click);
             // 
             // manageLocationsToolStripMenuItem
             // 
             this.manageLocationsToolStripMenuItem.Name = "manageLocationsToolStripMenuItem";
-            this.manageLocationsToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.manageLocationsToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.manageLocationsToolStripMenuItem.Text = "Manage Locations";
             this.manageLocationsToolStripMenuItem.Click += new System.EventHandler(this.manageLocationsToolStripMenuItem_Click);
-            // 
-            // staticsToolStripMenuItem
-            // 
-            this.staticsToolStripMenuItem.Name = "staticsToolStripMenuItem";
-            this.staticsToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.staticsToolStripMenuItem.Text = "Statics";
-            // 
-            // sessionsToolStripMenuItem
-            // 
-            this.sessionsToolStripMenuItem.Name = "sessionsToolStripMenuItem";
-            this.sessionsToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
-            this.sessionsToolStripMenuItem.Text = "Sessions";
-            // 
-            // workingDaysAndHoursToolStripMenuItem
-            // 
-            this.workingDaysAndHoursToolStripMenuItem.Name = "workingDaysAndHoursToolStripMenuItem";
-            this.workingDaysAndHoursToolStripMenuItem.Size = new System.Drawing.Size(150, 20);
-            this.workingDaysAndHoursToolStripMenuItem.Text = "Working Days and Hours";
-            // 
-            // advancedSessionsToolStripMenuItem
-            // 
-            this.advancedSessionsToolStripMenuItem.Name = "advancedSessionsToolStripMenuItem";
-            this.advancedSessionsToolStripMenuItem.Size = new System.Drawing.Size(119, 20);
-            this.advancedSessionsToolStripMenuItem.Text = "Advanced Sessions";
             // 
             // addRoomForSessionToolStripMenuItem
             // 
@@ -298,6 +278,34 @@ namespace ITPM_new
             this.addRoomForSessionToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.addRoomForSessionToolStripMenuItem.Text = "Add Room for Session";
             this.addRoomForSessionToolStripMenuItem.Click += new System.EventHandler(this.addRoomForSessionToolStripMenuItem_Click);
+            // 
+            // staticsToolStripMenuItem
+            // 
+            this.staticsToolStripMenuItem.Name = "staticsToolStripMenuItem";
+            this.staticsToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.staticsToolStripMenuItem.Text = "Statics";
+            this.staticsToolStripMenuItem.Click += new System.EventHandler(this.staticsToolStripMenuItem_Click);
+            // 
+            // sessionsToolStripMenuItem
+            // 
+            this.sessionsToolStripMenuItem.Name = "sessionsToolStripMenuItem";
+            this.sessionsToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
+            this.sessionsToolStripMenuItem.Text = "Sessions";
+            this.sessionsToolStripMenuItem.Click += new System.EventHandler(this.sessionsToolStripMenuItem_Click);
+            // 
+            // workingDaysAndHoursToolStripMenuItem
+            // 
+            this.workingDaysAndHoursToolStripMenuItem.Name = "workingDaysAndHoursToolStripMenuItem";
+            this.workingDaysAndHoursToolStripMenuItem.Size = new System.Drawing.Size(150, 20);
+            this.workingDaysAndHoursToolStripMenuItem.Text = "Working Days and Hours";
+            this.workingDaysAndHoursToolStripMenuItem.Click += new System.EventHandler(this.workingDaysAndHoursToolStripMenuItem_Click);
+            // 
+            // advancedSessionsToolStripMenuItem
+            // 
+            this.advancedSessionsToolStripMenuItem.Name = "advancedSessionsToolStripMenuItem";
+            this.advancedSessionsToolStripMenuItem.Size = new System.Drawing.Size(119, 20);
+            this.advancedSessionsToolStripMenuItem.Text = "Advanced Sessions";
+            this.advancedSessionsToolStripMenuItem.Click += new System.EventHandler(this.advancedSessionsToolStripMenuItem_Click);
             // 
             // addLocationSession
             // 

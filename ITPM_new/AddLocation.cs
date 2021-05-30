@@ -154,5 +154,13 @@ namespace ITPM_new
             addLocationSession form = new addLocationSession();
             form.Show();
         }
+
+        private void sessionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Add_session form2 = new Add_session();
+            form2.Tag = this;
+            form2.Show(this);
+            Hide();
+        }
     }
 }

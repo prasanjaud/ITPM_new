@@ -493,6 +493,8 @@ namespace ITPM_new
             this.Controls.Add(this.btn_ViewParrallelupdate);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "View_Parallel_Session";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "View_Parallel_Session";

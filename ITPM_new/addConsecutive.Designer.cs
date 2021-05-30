@@ -180,6 +180,8 @@ namespace ITPM_new
             this.Controls.Add(this.lblSelectRoom);
             this.Controls.Add(this.cmbBoxSession1);
             this.Controls.Add(this.lblSelectSession1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "addConsecutive";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "addConsecutive";

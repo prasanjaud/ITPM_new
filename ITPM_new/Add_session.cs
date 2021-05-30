@@ -147,6 +147,16 @@ namespace ITPM_new
                     con.setData(query);
 
             }
+
+            lec.Text = "";
+            lec2.Text = "";
+            grp.Text = "";
+            sub.Text = "";
+            subn.Text = "";
+            tag.Text = "";
+            scount.Text = "";
+            time.Text = "";
+            view.Text = "";
         }
 
         private void button14_Click(object sender, EventArgs e)
@@ -228,6 +238,19 @@ namespace ITPM_new
             AddLocation mform = new AddLocation();
             mform.Show();
             this.Hide();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            lec.Text = "";
+            lec2.Text = "";
+            grp.Text = "";
+            sub.Text = "";
+            subn.Text = "";
+            tag.Text = "";
+            scount.Text = "";
+            time.Text = "";
+            view.Text = "";
         }
     }
 }

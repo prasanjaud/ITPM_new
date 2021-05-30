@@ -483,6 +483,8 @@ namespace ITPM_new
             this.Controls.Add(this.label10);
             this.Controls.Add(this.dataGridView1);
             this.ForeColor = System.Drawing.Color.Teal;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Man_lec";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manage Lecturers";

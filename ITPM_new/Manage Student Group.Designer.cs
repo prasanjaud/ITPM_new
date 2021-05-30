@@ -456,6 +456,8 @@ namespace ITPM_new
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Manage_Student_Group";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manage_Student_Group";

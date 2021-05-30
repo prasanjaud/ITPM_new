@@ -327,13 +327,6 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Mr.Pawan Balasooriya",
-            "Mrs.Kawini Gunasekara",
-            "Ms.Nuwani Bandara",
-            "Mr.Aruna Siriwardhana",
-            "Mrs.Subhani Karunarathana",
-            "Ms.Harshi Frenando"});
             this.comboBox1.Location = new System.Drawing.Point(595, 198);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(207, 21);
@@ -342,12 +335,6 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
             this.comboBox2.Location = new System.Drawing.Point(595, 246);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(207, 21);
@@ -356,17 +343,6 @@
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "1.1",
-            "1.2",
-            "2.1",
-            "2.2",
-            "3.1",
-            "3.2",
-            "4.1",
-            "4.2",
-            "5.1",
-            "5.2"});
             this.comboBox3.Location = new System.Drawing.Point(595, 293);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(207, 21);
@@ -375,12 +351,6 @@
             // comboBox4
             // 
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "S01",
-            "S02",
-            "S03",
-            "S04",
-            "S05"});
             this.comboBox4.Location = new System.Drawing.Point(595, 344);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(207, 21);
@@ -486,6 +456,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.hScrollBar1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "_3mem3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "_3mem3";
